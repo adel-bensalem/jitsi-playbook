@@ -1,0 +1,2 @@
+- name: Generate password
+  shell: /srv/checkout/gen-passwords.sh

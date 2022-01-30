@@ -1,0 +1,20 @@
+- name: Create required CONFIG directories
+  file:
+    path: "~/.jitsi-meet-cfg/{{ item }}"
+    state: directory
+  with_items:
+    - web/crontabs
+    - web/letsencrypt
+    - transcripts
+    - prosody/config
+    - prosody/prosody-plugins-custom
+    - jicofo
+    - jvb
+    - jigasi
+    - jibri
+
+- name: Replace env file
+  template:
+    src: .env.j2
+    dest: /srv/checkout/.env
+

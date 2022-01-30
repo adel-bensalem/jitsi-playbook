@@ -1,0 +1,6 @@
+app_id: visio
+app_secret: visio
+port: 8065
+enable_letsencrypt: 0
+letsencrypt_email: baptiste.plancke@epitech.eu
+domain_name: meet.example.com

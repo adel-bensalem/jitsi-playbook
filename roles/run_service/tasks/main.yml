@@ -1,0 +1,5 @@
+- name: Stop service via Docker compose
+  shell: docker-compose -f /srv/checkout/docker-compose.yml down
+
+- name: Run service via Docker compose
+  shell: docker-compose -f /srv/checkout/docker-compose.yml up -d

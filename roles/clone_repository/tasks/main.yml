@@ -1,0 +1,6 @@
+- name: Clone Jitsi Docker repository
+  git:
+    repo: 'https://github.com/jitsi/docker-jitsi-meet.git'
+    dest: /srv/checkout
+    version: stable-6826
+
